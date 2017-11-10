@@ -88,7 +88,7 @@
 		75ABB48E3C30C2D736C3D05D6FD566A8 /* BeNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77C4895BE37EBF11870A09474302DD9 /* BeNil.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		760D9715FEE7F02F224AD2E493368948 /* ExampleMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C71DF19B75D27352FBD0AE9FF127BEA /* ExampleMetadata.swift */; };
 		7E0C9AE6468A5DF91F0F4C7A387D725C /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2422E93954D24F2DB24B0ECC8612A13 /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
-		7E610AF21FB592ED00DDB1EF /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E610AF01FB5927100DDB1EF /* UIColor+Hex.swift */; };
+		7E2034DB1FB5989400AF2E3D /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2034DA1FB5989400AF2E3D /* UIColor+Hex.swift */; };
 		7E9B14D5F8842A86CA86F2AF45230725 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06DD029A3EDBE8A1D68E460BB1C997C1 /* XCTest.framework */; };
 		7FA6BC5B4D3346247022C53E242A62AA /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDAF7997990F609B80722636041A758 /* ExampleGroup.swift */; };
 		7FC992F4BD0376ACB4F97F9180B0F0B5 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC05FFCDBC43073BECB34E4AFEF85F02 /* FBSnapshotTestCase.framework */; };
@@ -319,8 +319,8 @@
 		78B585269C9DF2945036D1F5240C27DB /* AllPass.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AllPass.swift; path = Sources/Nimble/Matchers/AllPass.swift; sourceTree = "<group>"; };
 		795A90F46534585D6C119CDB2FE89316 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		7D1E103702ABBD58F315C182A4866454 /* NBSMockedApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = NBSMockedApplication.m; path = DynamicType/NBSMockedApplication.m; sourceTree = "<group>"; };
+		7E2034DA1FB5989400AF2E3D /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		7E4FE1DEA1CDA85E2C2446B52A88AE70 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7E610AF01FB5927100DDB1EF /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		834BC3BE9934A7B53402DA6BE32DBA63 /* Pods-FocalUtilities_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FocalUtilities_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		840FD64E1CCF77D2557E76A7102D5CA2 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
 		8504C77739B563E159F5366E80B534C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -655,12 +655,13 @@
 			);
 			sourceTree = "<group>";
 		};
-		7E610AEF1FB591E900DDB1EF /* UIColor */ = {
+		7E2034D91FB5989400AF2E3D /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				7E610AF01FB5927100DDB1EF /* UIColor+Hex.swift */,
+				7E2034DA1FB5989400AF2E3D /* UIColor+Hex.swift */,
 			);
-			path = UIColor;
+			name = UIColor;
+			path = FocalUtilities/Classes/UIColor;
 			sourceTree = "<group>";
 		};
 		82FB7CFF656A6DEE32FE73ED691D76F4 /* Pods */ = {
@@ -709,7 +710,7 @@
 		CF4444CE5EF46F366EC349648D20AA55 /* FocalUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				7E610AEF1FB591E900DDB1EF /* UIColor */,
+				7E2034D91FB5989400AF2E3D /* UIColor */,
 				72E8FBF801053AA1E85647CA22C87E50 /* Support Files */,
 			);
 			name = FocalUtilities;
@@ -1203,7 +1204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94BC15EF616AD547B3E0AB672582535C /* FocalUtilities-dummy.m in Sources */,
-				7E610AF21FB592ED00DDB1EF /* UIColor+Hex.swift in Sources */,
+				7E2034DB1FB5989400AF2E3D /* UIColor+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1557,6 +1558,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -1646,6 +1648,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_VERSION = 4.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
