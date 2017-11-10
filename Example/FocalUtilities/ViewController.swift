@@ -7,18 +7,26 @@
 //
 
 import UIKit
+import FocalUtilities
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var colorInput: UITextField!
+    @IBOutlet weak var colorOutput: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.colorInput.text = self.colorOutput.backgroundColor?.toHexString() ?? ""
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func applyColorTouched(_ sender: Any) {
+        let colorHexCode = self.colorInput.text;
+        if let colorHexCode = colorHexCode {
+            self.colorOutput.backgroundColor = UIColor(hexString: colorHexCode)
+        }
     }
-
+    
+    @IBAction func dismissKeyboard(_ sender: Any) {
+        self.view.endEditing(true)
+    }
 }
-

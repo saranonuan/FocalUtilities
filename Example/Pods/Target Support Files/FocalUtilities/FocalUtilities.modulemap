@@ -1,0 +1,6 @@
+framework module FocalUtilities {
+  umbrella header "FocalUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}

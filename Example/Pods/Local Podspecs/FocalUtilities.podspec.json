@@ -1,0 +1,22 @@
+{
+  "name": "FocalUtilities",
+  "version": "0.1.0",
+  "summary": "A short description of FocalUtilities.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/saranonuan/FocalUtilities",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "saranonuan": "saran@focalsolution.com"
+  },
+  "source": {
+    "git": "https://github.com/saranonuan/FocalUtilities.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FocalUtilities/Classes/**/*"
+}
